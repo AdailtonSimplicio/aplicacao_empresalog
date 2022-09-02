@@ -1,0 +1,31 @@
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Remetente</th>
+        <th scope="col">CNPJ</th>
+        <th scope="col">CEP</th>
+        <th scope="col">Rua</th>
+        <th scope="col">Número</th>
+        <th scope="col">Bairro</th>
+        <th scope="col">Cidade</th>
+        <th scope="col">Estado</th>
+        <th scope="col">Valor  do frete</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let empresa of empresas">
+        <td>{{empresa.remetente}}</td>
+        <td>{{empresa.cnpj}}</td>
+        <td>{{empresa.cep}}</td>
+        <td>{{empresa.rua}}</td>
+        <td>{{empresa.numero}}</td>
+        <td>{{empresa.bairro}}</td>
+        <td>{{empresa.cidade}}</td>
+        <td>{{empresa.estado}}</td>
+        <td>{{empresa.valor | currency : 'BRL'}}</td>
+    
+      </tr>
+    </tbody>
+  </table>

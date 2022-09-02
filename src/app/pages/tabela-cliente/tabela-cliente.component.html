@@ -1,0 +1,29 @@
+
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Nome</th>
+        <th scope="col">CPF</th>
+        <th scope="col">CEP</th>
+        <th scope="col">Rua</th>
+        <th scope="col">Número</th>
+        <th scope="col">Bairro</th>
+        <th scope="col">Cidade</th>
+        <th scope="col">Estado</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cliente of clientes">
+        <td>{{cliente.nome}}</td>
+        <td>{{cliente.cpf}}</td>
+        <td>{{cliente.cep}}</td>
+        <td>{{cliente.rua}}</td>
+        <td>{{cliente.numero}}</td>
+        <td>{{cliente.bairro}}</td>
+        <td>{{cliente.cidade}}</td>
+        <td>{{cliente.estado}}</td>
+    
+      </tr>
+    </tbody>
+  </table>
