@@ -1,4 +1,4 @@
-
+<div class="container p-5 my-5"  >
 <table class="table">
     <thead class="thead-dark">
       <tr>
@@ -10,11 +10,11 @@
         <th scope="col">Bairro</th>
         <th scope="col">Cidade</th>
         <th scope="col">Estado</th>
-
+        <th scope="col">Empresa Responsavel</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let cliente of clientes">
+      <tr *ngFor="let cliente of clientes" center mr-auto>
         <td>{{cliente.nome}}</td>
         <td>{{cliente.cpf}}</td>
         <td>{{cliente.cep}}</td>
@@ -23,7 +23,16 @@
         <td>{{cliente.bairro}}</td>
         <td>{{cliente.cidade}}</td>
         <td>{{cliente.estado}}</td>
-    
+        <td>
+          <button class="btn btn-outline-success" (click)="verEmpresa()"
+          >Ver detalhes</button>
+        </td>
       </tr>
     </tbody>
   </table>
+  <div class="container text-center p-5 my-5">
+    <button (click)="cadastrarNovoCliente()"  type="button" class="btn btn-secondary">Cadastrar novo cliente</button>
+    </div>
+    
+
+</div>

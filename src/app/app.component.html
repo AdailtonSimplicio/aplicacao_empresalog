@@ -1,39 +1,5 @@
-
-
-
- <!-- Page Wrapper -->
- <div id="wrapper">
-
-  <app-menu></app-menu>
-
-  <!-- Content Wrapper -->
-  <div id="content-wrapper" class="d-flex flex-column">
-
-  <!-- Main Content -->
-  <div id="content">
-
-      <!-- Topbar -->
-      <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"></nav>
-      <!-- End of Topbar -->
-      <div class="container">
-        <div class="d-sm-flex align-items-center justify-content-between mb-4">
-          <h1 class="h3 mb-0 text-gray-800">CLIENTE</h1>
-      </div>
-      <app-tabela-cliente></app-tabela-cliente>
-    </div>
-    <hr>
-    <div class="container">
-      <div class="d-sm-flex align-items-center justify-content-between mb-4">
-        <h1 class="h3 mb-0 text-gray-800">EMPRESA</h1>
-    </div>
-    <app-tabela-empresa></app-tabela-empresa>
-  </div>
-  <div class="container">
-    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-      <h1 class="h3 mb-0 text-gray-800">CADASTRAR</h1>
-  </div>
-  <app-cadastarcliente></app-cadastarcliente>
-  </div>
-  <app-footer></app-footer>
-  
-
+<app-menu></app-menu>
+<app-header></app-header>
+<router-outlet></router-outlet>
+<app-home></app-home>
+<app-header2></app-header2>

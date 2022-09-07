@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { Cliente } from '../interfaces/cliente-interface';
 
@@ -20,9 +21,18 @@ export class TabelaClienteComponent implements OnInit {
     estado: 'RS',
     }];
   
-  constructor() { }
+  constructor(
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
   }
-
+  verEmpresa(){
+    this.router.navigate(['empresa'])
+    
+  }
+  cadastrarNovoCliente(){
+    this.router.navigate(['cadastrarNovoCliente'])
+    
+  }
 }

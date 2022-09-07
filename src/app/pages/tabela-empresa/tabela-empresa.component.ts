@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 import { Empresas } from '../interfaces/empresa-interface';
 
@@ -20,9 +21,13 @@ export class TabelaEmpresaComponent implements OnInit {
     estado: 'AL',
     valor: 154.00,
   }];
-  constructor() { }
+  constructor( private router: Router,) { }
 
   ngOnInit(): void {
+  }
+  voltarClientes(){
+    this.router.navigate(['clientes'])
+    
   }
 
 
